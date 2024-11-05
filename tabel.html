@@ -8,41 +8,41 @@
     <style>
         /* Background halaman */
         body {
-            background-color: rgb(90, 75, 40); /* Warna coklat yang lembut */
+            background-color: rgb(90, 75, 40); /* Warna coklat lembut */
             color: rgb(250, 235, 218); /* Teks terang */
         }
 
         /* Background tabel */
         table {
-            background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang putih dengan transparansi */
+            background-color: rgba(255, 255, 255, 0.9); /* Putih transparan */
         }
 
-        /* Menambahkan latar belakang warna pada baris tabel ganjil */
+        /* Warna latar belakang baris ganjil dan genap */
         tbody tr:nth-child(odd) {
-            background-color: #f9f9f9; /* Warna latar belakang untuk baris ganjil */
+            background-color: #f9f9f9;
         }
-
-        /* Menambahkan latar belakang warna pada baris tabel genap */
         tbody tr:nth-child(even) {
-            background-color: #f1f1f1; /* Warna latar belakang untuk baris genap */
+            background-color: #f1f1f1;
         }
 
-        /* Menambahkan efek hover pada baris tabel */
+        /* Efek hover pada baris tabel */
         tbody tr:hover {
-            background-color: #ffe600; /* Warna latar belakang saat hover */
-            cursor: pointer; /* Menambahkan pointer saat hover */
+            background-color: #ffe600;
+            cursor: pointer;
         }
 
-        /* Gaya untuk header tabel */
+        /* Gaya header tabel */
         th {
-            background-color: #3b3b3b; /* Warna latar belakang gelap untuk header */
-            color: #ffffff; /* Teks putih di header */
+            background-color: #3b3b3b;
+            color: #ffffff;
         }
 
-        /* Gaya untuk footer */
+        /* Gaya footer */
         footer {
             background-color: #3b3b3b;
             color: #ffffff;
+            text-align: center;
+            padding: 1rem;
         }
     </style>
 </head>
@@ -51,13 +51,11 @@
         <h1>Jenis Kopi</h1>
     </header>
 
+    <!-- Navbar tanpa fitur collapse -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Kopi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+        <div class="navbar-collapse">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="tabel.html">Jenis Kopi</a>
                 </li>
@@ -113,10 +111,5 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Website Kopi. All Rights Reserved.</p>
     </footer>
-
-    <!-- Bootstrap JS dan dependensi -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
