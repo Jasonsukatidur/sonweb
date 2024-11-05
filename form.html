@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Atur tinggi penuh untuk halaman */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Konten utama untuk membuat footer di bawah */
+        .content {
+            flex: 1;
+        }
+        /* Gaya untuk footer */
+        footer {
+            background-color: #3b3b3b;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-dark text-white text-center py-3">
         <h1>Kontak Kami</h1>
     </header>
 
+    <!-- Navbar tanpa JavaScript -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Kopi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-collapse">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="tabel.html">Jenis Kopi</a>
@@ -28,7 +46,8 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <!-- Konten utama -->
+    <div class="container content mt-5">
         <h2>Form Kontak</h2>
         <form>
             <div class="form-group">
@@ -46,13 +65,9 @@
             <button type="submit" class="btn btn-primary">Kirim</button>
         </form>
     </div>
-
+    <!-- Footer selalu berada di bawah -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Website Kopi. All Rights Reserved.</p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
